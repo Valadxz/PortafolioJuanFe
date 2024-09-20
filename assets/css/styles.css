@@ -1,0 +1,556 @@
+:root {
+    --color-de-fondo: #5E6AD2;
+    --color-de-fondo-menu: #2D374C;
+    --color-1: #131722;
+    --accent_color: #2D374C;
+    --color-hover: #495381;
+    --color-de-link: #000000;
+    --color-text: #C0C6D6;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    color: var(--color-text);
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+i {
+    color: var(--color-text);
+    padding-left: 5px;
+}
+
+span {
+    color: var(--color-de-fondo);
+}
+
+section, footer{
+    width: 100%;
+    padding: 2rem 6rem;
+    display: flex;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------ Sección del menú ----------------------------------*/
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    height: 88px;
+    width: 100%;
+    background-image: url(../images/design/navbar_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid var(--accent_color);
+    box-sizing: border-box;
+}
+
+.cabecera__logo {
+    width: auto;
+    height: auto;
+}
+
+.cabecera__titulo {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0;
+}
+
+.navegacion {
+    padding: auto;
+    display: flex;
+    position: relative;
+}
+
+.navegacion__lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 32px;
+}
+
+.navegacion__elemento a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.navegacion__elemento a:hover {
+    color: var(--color-hover);
+}
+
+.navegacion__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+/* ------------------------------ Sección presentación ----------------------------------*/
+
+.presentacion {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/design/hero_bg.jpg);
+  
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.presentacion a:hover,
+i:hover {
+    color: var(--color-hover);
+}
+
+.presentacion__foto {
+    width: 368px;
+    height: 368px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+.presentacion__titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.presentacion__subtitulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: justify;
+    padding: 0;
+}
+
+.redes {
+    width: 76px;
+    height: 19px;
+    gap: 32px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos dentro de la lista de redes sociales */
+.redes__img {
+    display: flex;
+    align-items: center;
+}
+
+.redes__img a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+}
+
+.redes__img img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/design/about_bg.jpg);
+    flex-direction: column;
+    height: 383px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sobre-mi__titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0;
+}
+
+.sobre-mi__texto {
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+
+.sobre-mi__firma {
+    width: 140px;
+    height: 52px;
+    object-fit: contain;
+    text-align: left;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+}
+
+.habilidades__titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-de-fondo);
+}
+
+.habilidades__subtitulo {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--primary_color);
+}
+
+.habilidades__lista,
+.aficiones__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.habilidades__elemento,
+.aficiones__elemento {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), var(--color-1);
+    padding: 16px 0px 0px 0px;
+    width: 176px;
+    height: 174px;
+    gap: 8px;
+    transition: transform 0.3s ease, background 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.habilidades__elemento:hover {
+    background: linear-gradient(0deg, rgba(94, 106, 210, 0.3) 0%, rgba(27, 31, 47, 1) 30%);
+    transform: translateY(-25px);
+}
+
+.habilidades__icono,
+.aficiones__icono {
+    padding: 0 0 0 2rem;
+    font-size: 24px;
+    color: var(--secondary_color);
+    margin-bottom: 10px;
+}
+
+
+.habilidades__elemento:hover .habilidades__icono {
+    transform: scale(1.1);
+}
+
+.habilidades__nombre,
+.aficiones__nombre {
+    padding: 0 0 2rem 2rem;
+    font-size: 16px;
+    margin: 0;
+    color: var(--secondary_color);
+}
+
+.seccion {
+    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 0%, rgba(255, 255, 255, 0) 50%), url(../images/design/services_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.aficiones__titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-de-fondo);
+}
+
+.aficiones__elemento:hover {
+    background: linear-gradient(0deg, rgba(94, 106, 210, 0.3) 0%, rgba(27, 31, 47, 1) 30%);
+    transform: translateY(25px);
+}
+
+
+/*------------------------------ Sección de formación --------------------------------*/
+.formacion {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5%, rgba(13, 18, 26, 1) 95%), url(../images/design/partner_testimonial_bg.jpg);
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.formacion__titulo {
+    color: var(--color-de-fondo);
+    text-align: center;
+}
+
+.formacion__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), var(--color-1);
+    width: 100%;
+    max-width: 335px;
+    height: 347px;
+    padding: 16px;
+    transition: transform 0.3s ease, background 0.4s ease, opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+.formacion__elemento:hover {
+    transform: scale(1.04);
+}
+
+.formacion__icono {
+    margin: 1rem;
+}
+
+.formacion__nombre {
+    font-size: 22px;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.formacion__detalle {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 5%, rgba(58, 57, 57, 0) 80%), url(../images/design/contact_bg.jpg);
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.proyectos__titulo {
+    font-size: 36px;
+    text-align: center;
+    color: var(--color-de-fondo);
+    margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.proyectos__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+.proyectos__imagen {
+    padding: 2rem;
+    width: 70%;
+    max-width: 752px;
+    height: 406px;
+    object-fit: cover;
+    border: 1px solid var(--accent_color);
+    background-image: url(assets/d2c_box_bg.png);
+}
+
+.proyectos__contenido {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.proyectos__contenedor.izquierda {
+    flex-direction: row; /* Imagen a la izquierda */
+}
+
+.proyectos__contenedor.derecha {
+    flex-direction: row-reverse; /* Imagen a la derecha */
+}
+.proyectos__nombre {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-de-fondo);
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.proyectos__descripcion {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.proyectos__botones {
+    display: flex;
+    gap: 1rem;
+}
+
+.proyectos__botones .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-de-fondo);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.proyectos__botones .btn:hover {
+    background-color: var(--color-hover);
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    background: url(../images/design/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacto img {
+    max-width: 464px;
+    height: 593px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+    height: 593px;
+    padding-left: 2rem;
+}
+
+.contacto__titulo {
+    font-size: 36px;
+    color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    color: var(--primary_color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    color: var(--text_color) !important;
+    border-radius: 4px;
+    border: 1px solid #333B6D;
+    box-sizing: border-box;
+}
+
+.contacto__campo--textarea {
+    min-height: 133px;
+}
+
+.contacto__campo:focus {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0.00) 100%), #131722;
+    box-shadow: none;
+    border: 1px solid #333B6D;
+    color: var(--primary_text_color);
+}
+
+.error-message {
+    color: red; 
+    font-size: 14px;
+    margin-top: -15px; 
+    margin-bottom: 10px; 
+}
+
+.contacto__boton {
+    background-color: var(--color-de-fondo);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__boton:disabled {
+    background-color: gray; 
+    cursor: not-allowed; 
+}
+
+.contacto__boton:hover {
+    background-color: var(--color-hover);
+}
+
+.pie {
+    background: url(../images/design/footer_bg.jpg), var(--color-de-fondo);
+    border-top: 1px solid var(--accent_color);
+}
+
