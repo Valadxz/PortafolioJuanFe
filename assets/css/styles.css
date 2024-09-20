@@ -112,8 +112,7 @@ section, footer{
 /* ------------------------------ Sección presentación ----------------------------------*/
 
 .presentacion {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/design/hero_bg.jpg);
-  
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/design/presentation_bg.jpg);
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -273,7 +272,6 @@ i:hover {
     margin-bottom: 10px;
 }
 
-
 .habilidades__elemento:hover .habilidades__icono {
     transform: scale(1.1);
 }
@@ -287,7 +285,7 @@ i:hover {
 }
 
 .seccion {
-    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 0%, rgba(255, 255, 255, 0) 50%), url(../images/design/services_bg.jpg);
+    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 0%, rgba(255, 255, 255, 0) 50%), url(../images/design/hobbies_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -316,7 +314,7 @@ i:hover {
 
 /*------------------------------ Sección de formación --------------------------------*/
 .formacion {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5%, rgba(13, 18, 26, 1) 95%), url(../images/design/partner_testimonial_bg.jpg);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5%, rgba(13, 18, 26, 1) 95%), url(../images/design/education_bg.jpg);
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
@@ -376,7 +374,7 @@ i:hover {
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 .proyectos {
-    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 5%, rgba(58, 57, 57, 0) 80%), url(../images/design/contact_bg.jpg);
+    background: linear-gradient(180deg, rgba(13, 18, 26, 1) 5%, rgba(58, 57, 57, 0) 80%), url(../images/design/projects_bg.jpg);
     flex-direction: column;
     text-align: left;
     margin: 0 auto;
