@@ -22,6 +22,7 @@ https://valadxz.github.io/PortafolioJuanFe/
 ![App Screenshot](https://i.ibb.co/b3xhgGm/imagen-2024-09-20-013347952.png)
 
 Vista en celulares
+
 ![App Screenshot](https://i.ibb.co/vVmTppv/valadxz-github-io-Portafolio-Juan-Fe-Samsung-Galaxy-S20-Ultra.png)
 
 Validaciones del formulario
